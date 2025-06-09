@@ -11,6 +11,7 @@ def validar_senha(senha):
         return "A senha deve conter pelo menos um número."
     if not re.search(r"[!@#$%^&*()_+]", senha):
         return "A senha deve conter pelo menos um caractere especial (!@#$...)."
+    
     return "Senha válida!"
 
 if __name__ == "__main__":
